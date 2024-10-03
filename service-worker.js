@@ -8,8 +8,8 @@ self.addEventListener('install', (event) => {
                 '/u30.css',
                 '/u32-2-A0.js',
                 '/ss_bg4.webp',
-                '/icons/icon-192x192.png',
-                '/icons/icon-512x512.png'
+                '/blocksmatch/icons/icon-192x192.png',
+                '/blocksmatch/icons/icon-512x512.png'
             ]);
         })
     );
