@@ -1,5 +1,6 @@
 {
     "name": "Блоки t3",
+    "version": "1.0.0",
     "short_name": "Блоки",
     "start_url": "/blocksmatch/index.html",
     "display": "standalone",
