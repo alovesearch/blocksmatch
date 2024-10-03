@@ -1,0 +1,29 @@
+
+<!--------------->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Блоки</title>
+    <link rel="stylesheet" href="u30.css">
+</head>
+<body>
+    <!--<button id="playButton">Воспроизвести аудио</button>-->
+    <div class="backb">
+    <div class="board" id="board"></div>
+    </div>
+    <script type="text/javascript" src="u32-2-A0.js"></script>
+    <script type="text/javascript" src="u30_audio.js"></script>
+        <script>
+        // Функция, которая будет вызвана после загрузки всех ресурсов
+        function onLoad() {
+            console.log('Все ресурсы загружены');
+        }
+
+        // Добавляем обработчик события load к тегу body
+        document.addEventListener('DOMContentLoaded', onLoad);
+    </script>
+</body>
+</html>
