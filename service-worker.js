@@ -4,13 +4,13 @@ self.addEventListener('install', (event) => {
         .then((cache) => {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/u30.css',
-                '/u32-2-A0.js',
-                '/ss_bg4.webp',
-                '/MyPWAServlet.java',
-                '/manifest.json',
-                '/service-worker.js',
+                '/blocksmatch/index.html',
+                '/blocksmatch/u30.css',
+                '/blocksmatch/u32-2-A0.js',
+                '/blocksmatch/ss_bg4.webp',
+                '/blocksmatch/MyPWAServlet.java',
+                '/blocksmatch/manifest.json',
+                '/blocksmatch/service-worker.js',
                 '/blocksmatch/icons/icon-192x192.png',
                 '/blocksmatch/icons/icon-512x512.png'
             ]);
