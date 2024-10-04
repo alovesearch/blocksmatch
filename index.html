@@ -28,7 +28,7 @@
         // Регистрация Service Worker для IndexedDB (данных веб приложения) / Постоянная память
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/service-worker-IndexedDB.js').then(function(registration) {
+                navigator.serviceWorker.register('/blocksmatch/service-worker-IndexedDB.js').then(function(registration) {
                     console.log('IndexedDB: ServiceWorker registration successful with scope: ', registration.scope);
                 }, function(err) {
                     console.log('IndexedDB: ServiceWorker registration failed: ', err);
