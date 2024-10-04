@@ -15,6 +15,7 @@ self.addEventListener('install', function(event) {
         '/blocksmatch/MyPWAServlet.java',
         '/blocksmatch/manifest.json',
         '/blocksmatch/service-worker.js',
+        '/blocksmatch/service-worker-IndexedDB.js',
         '/blocksmatch/icons/icon-192x192.png',
         '/blocksmatch/icons/icon-512x512.png'
     ];
@@ -48,9 +49,13 @@ self.addEventListener('fetch', function(event) {
                     const size = new Blob([data.response]).size;
                     console.log(`Serving ${event.request.url} from IndexedDB with size ${size} bytes`);
                     
+                    // Используем сохраненные данные
                     return new Response(data.response, { headers: { 'Content-Type': 'text/html' } });
                 } else {
-                    return fetch(event.request);
+                    // Данные не найдены в IndexedDB, делаем сетевой запрос
+                    return fetch(event.request).catch(error => {
+                        console.error('Network fetch failed:', error);
+                    });
                 }
             }).catch(error => {
                 console.error('Fetch error:', error);
