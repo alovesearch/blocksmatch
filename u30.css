@@ -1,11 +1,13 @@
-
+html, body {
+            background: #000000;
+            background-color: #000000;
+}
 
 body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f3f3f3;
             background-image: url("ss_bg4.webp");
             background-size: cover;
             -webkit-background-size: cover;
